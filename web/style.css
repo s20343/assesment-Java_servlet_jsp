@@ -1,0 +1,94 @@
+/* Default styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#clientErrorMessage {
+    color: red;
+    margin-top: 10px;
+}
+
+#primeNumbersSection {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#primeNumbersSection p {
+    color: #007BFF;
+    font-weight: bold;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: 24px solid #333;
+    box-sizing: border-box;
+}
+
+/* Responsive styles for screens up to 768px (common mobile screen size) */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    form {
+        margin: 10px;
+    }
+
+    input[type="number"] {
+        padding: 3px;
+        margin-right: 5px;
+    }
+
+    input[type="submit"] {
+        padding: 3px 6px;
+    }
+
+    /* Adjust styles for the footer on small screens */
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+}
